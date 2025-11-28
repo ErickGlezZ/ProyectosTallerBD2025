@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BD_SQLite_2025</string>
+    <string name="txt_btn_Altas">AGREGAR</string>
+    <string name="txt_btn_Bajas">BAJAS</string>
+    <string name="txt_btn_Cambios">CAMBIOS</string>
+    <string name="txt_btn_Consultas">CONSULTAS</string>
+    <string name="txt_titulo_altas">AGREGAR ALUMNOS</string>
+    <string name="txt_filtro">Numero de Control: </string>
+</resources>

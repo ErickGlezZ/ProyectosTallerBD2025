@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_altas"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="130dp"
+        android:onClick="abrirActivities"
+        android:text="@string/txt_btn_Altas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_bajas"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="133dp"
+        android:onClick="abrirActivities"
+        android:text="@string/txt_btn_Bajas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_altas" />
+
+    <Button
+        android:id="@+id/btn_cambios"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="136dp"
+        android:onClick="abrirActivities"
+        android:text="@string/txt_btn_Cambios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bajas" />
+
+    <Button
+        android:id="@+id/btn_consultas"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="141dp"
+        android:onClick="abrirActivities"
+        android:text="@string/txt_btn_Consultas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cambios"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="60dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAMBIOS DE ALUMNOS"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp" />
+
+        <!-- NUMERO DE CONTROL -->
+
+        <!-- NOMBRE -->
+        <EditText
+            android:id="@+id/cajaNumControlCambios"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Número de Control"
+            android:inputType="number"
+            android:maxLength="8"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/cajaNombreCambios"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nombre del Alumno"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- BOTONES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBuscarCambios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="buscarAlumno"
+                android:text="Buscar" />
+
+            <Button
+                android:id="@+id/btnEditarCambios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="editarAlumno"
+                android:text="Editar" />
+
+            <Button
+                android:id="@+id/btnRestablecerCambios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="restablecerCampos"
+                android:text="Restablecer" />
+        </LinearLayout>
+
+        <!-- BOTÓN REGRESAR -->
+
+        <!-- RECYCLERVIEW -->
+        <Button
+            android:id="@+id/btnRegresarCambios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="regresar"
+            android:text="Regresar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCambios"
+            android:layout_width="match_parent"
+            android:layout_height="492dp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>

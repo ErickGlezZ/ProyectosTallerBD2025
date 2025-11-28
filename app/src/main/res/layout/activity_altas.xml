@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <!-- TÍTULO (más abajo para evitar la cámara frontal) -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_titulo_altas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- LABEL NUM CONTROL -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num Control:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- CAMPO NUM CONTROL -->
+    <EditText
+        android:id="@+id/caja_num_control_altas"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Solo números"
+        android:inputType="number"
+        android:padding="12dp"
+        app:layout_constraintStart_toEndOf="@id/textView2"
+        app:layout_constraintTop_toTopOf="@id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <!-- LABEL NOMBRE -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/caja_num_control_altas"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- CAMPO NOMBRE -->
+    <EditText
+        android:id="@+id/caja_nombre_altas"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Solo letras"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        app:layout_constraintStart_toEndOf="@id/textView3"
+        app:layout_constraintTop_toTopOf="@id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <!-- BOTÓN RESTABLECER -->
+    <Button
+        android:id="@+id/btn_restablecer_altas"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="restablecerCampos"
+        android:text="Restablecer"
+        app:layout_constraintEnd_toStartOf="@id/btn_guardar_altas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caja_nombre_altas" />
+
+    <!-- BOTÓN GUARDAR -->
+    <Button
+        android:id="@+id/btn_guardar_altas"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Guardar"
+        android:onClick="agregarAlumno"
+        app:layout_constraintTop_toBottomOf="@id/caja_nombre_altas"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@id/btn_restablecer_altas"
+        app:layout_constraintEnd_toStartOf="@id/btn_regresar_altas"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <!-- NUEVO BOTÓN REGRESAR -->
+    <Button
+        android:id="@+id/btn_regresar_altas"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:onClick="regresar"
+        android:text="Regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caja_nombre_altas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
